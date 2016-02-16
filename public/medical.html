@@ -1,0 +1,24 @@
+<body>
+<form action = "/medical" method="post">
+    <input type="radio" id="myself" name="reportDescription" value=myself checked><label class="btn" for="myself">Myself</label>
+    <input type="radio" id="another" name="reportDescription" value="another"><label class="btn" for="another">Another</label>
+    <div class= "form-group">
+        <label for="cboType">Report Type:</label>
+        <select name= "reType" id= "reType" class= "form-control" >
+            <option>Medical</option>
+        </select>
+        <label for="cboType">Subreport Type:</label>
+        <select name= "subreType" id= "subreType" class= "form-control" ng-model="selectedItem" >
+            <option></option>
+            <option value= "Unconscious Person">Unconscious Person</option>
+            <option value= "Non-lethal Issue">Non-lethal Issue</option>
+            <option value= "Lethal Issue">Lethal Issue</option>
+            <option value= "Other">Other</option>
+        </select>
+        <label for="txtField">Report:</label>
+        <input name="txtField" type="text" id= "txtField" class= "form-control"></input>
+        <button class= "btn btn-primary" data-ng-click= "addReport()">Submit</button>
+        <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+    </div>
+</form>
+</body>

@@ -1,0 +1,27 @@
+<table class = "table">
+    <tbody>
+    <tr>
+        <td data-ng-repeat="item in imgMissing" data-ng-click= "selectReportTypeMissing($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+        <td data-ng-repeat="item in imgSanitary" data-ng-click= "selectReportTypeSanitary($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+        <td data-ng-repeat="item in imgSuspicion" data-ng-click= "selectReportTypeSuspicion($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+    </tr>
+    <tr>
+        <td data-ng-repeat="item in imgMedical" data-ng-click= "selectReportTypeMedical($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+        <td data-ng-repeat="item in imgAgression" data-ng-click= "selectReportTypeAgression($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+        <td data-ng-repeat="item in imgMap" data-ng-click= "selectReportTypeMap($index)">
+            <div class="brightness"><img src="{{item.imgage}}" /></div>
+        </td>
+    </tr>
+
+    </tbody>
+</table>

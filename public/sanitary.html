@@ -1,0 +1,22 @@
+<body>
+<form action= "sanitary" method="post">
+    <div class= "form-group">
+        <label for="cboType">Report Type:</label>
+        <select name= "reType" id= "reType" class= "form-control" >
+            <option>Sanitary</option>
+        </select>
+        <label for="cboType">Subreport Type:</label>
+        <select name= "subreType" id= "subreType" class= "form-control" ng-model="selectedItem" >
+            <option></option>
+            <option value= "Dirty Classroom">Dirty Classroom</option>
+            <option value= "Vandalism">Vandalism</option>
+            <option value= "Dirty Enviroment">Dirty Enviroment</option>
+            <option value= "Other">Other</option>
+        </select>
+        <label for="txtField">Report:</label>
+        <input name="txtField" type="text" id= "txtField" class= "form-control"></input>
+        <button class= "btn btn-primary" data-ng-click= "addReport()">Submit</button>
+        <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+    </div>
+</form>
+</body>

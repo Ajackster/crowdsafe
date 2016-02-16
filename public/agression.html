@@ -1,0 +1,22 @@
+<body>
+<form action="/agression" method="post">
+    <div class= "form-group">
+        <label for="cboType">Report Type:</label>
+        <select name= "reType" id= "reType" class= "form-control" >
+            <option>Agression</option>
+        </select>
+        <label for="cboType">Subreport Type:</label>
+        <select name= "subreType" id= "subreType" class= "form-control" ng-model="selectedItem" >
+            <option></option>
+            <option value= "Assault">Assault</option>
+            <option value= "Sexual Harassment/Assault">Sexual Harassment/Assault</option>
+            <option value= "On-going Fight">On-going Fight</option>
+            <option value= "Other">Other</option>
+        </select>
+        <label for="txtField">Report:</label>
+        <input type="text" id= "txtField" class= "form-control" name= "txtField"></input>
+        <button type="submit" class= "btn btn-primary" data-ng-click= "addReport()">Submit</button>
+        <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+    </div>
+</form>
+</body>
