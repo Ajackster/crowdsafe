@@ -13,7 +13,6 @@ var app = express();
 //Setting port
 app.set('port', process.env.PORT || 3000);
 var port = app.get('port');
-//var ip = '192.168.0.115';
 
 //Using static files such as client-side javascript, css, and html.
 app.set('views', __dirname + '/public');
